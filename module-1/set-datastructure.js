@@ -2,14 +2,12 @@
 //  * set doesn't content dublicate data it store unique data
 
 const set = new Set();
-// * to add value use set.add method
+// * to add value use (set.add("String")) method
 set.add("apple");
 set.add("banana");
 set.add("mango");
 set.add("apple");
 set.add("pineapple");
-
-// * use (set.clear) to romove all the element
 
 // * use(set.delete) to remove sepecific element form the set
 console.log(set.delete("apple"));
@@ -22,6 +20,7 @@ console.log(set.has("mango"));
 
 // * use to see the index. This is a iterator
 console.log(set.keys());
+
 
 // * use to see how the number of element set content
 console.log(set.size);
@@ -36,3 +35,8 @@ const removeDublicate = (arr) => {
 };
 
 console.log(removeDublicate(arr));
+
+// * Set take less time then array
+
+// * use (set.clear) to romove all the element
+set.clear;
